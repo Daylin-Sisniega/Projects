@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixar Movie Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header id="movie-top">
+      <div class="file-upload-section">
+        <label class="file-upload">
+          <input id="moviefile" type="file" />
+          <span id="filename">Choose File</span>
+        </label>
+      </div>
+
+      <div class="filter-controls-section">
+        <select id="movie-year">
+          <option>All Years</option>
+        </select>
+
+        <select id="movie-director">
+          <option>All Directors</option>
+        </select>
+
+        <select id="movie-order">
+          <option>Ascending</option>
+          <option>Descending</option>
+        </select>
+
+        <input type="text" id="movie-search" placeholder="Search Movies..." />
+      </div>
+    </header>
+
+    <section id="movie-posters"></section>
+  </body>
+</html>
